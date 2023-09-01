@@ -28,6 +28,12 @@ h1 {
   letter-spacing: 15px;
 }
 
+h2 {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
 hr {
   width: 50%;
   margin: 30px auto;
