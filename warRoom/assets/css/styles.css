@@ -517,7 +517,7 @@ body.dark-theme {
   transition: transform 0.8s;
 }
 
-.services__tiitle {
+.services__title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1.5rem;
