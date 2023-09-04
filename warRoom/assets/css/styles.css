@@ -279,7 +279,7 @@ body.dark-theme {
 .home__perfil {
   width: 170px;
   height: 260px;
-  background-color: var(--gradient-color);
+  background-color: #8888;
   border-radius: 5.5rem;
   overflow: hidden;
   display: flex;
