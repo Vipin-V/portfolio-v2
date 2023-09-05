@@ -1,6 +1,6 @@
-# 💼 Responsive Personal Portfolio Website
+# My Personal Portfolio Website
 
-### 💼 Responsive Personal Portfolio Website
+### 💼 Responsive Personal Portfolio Website (in Developement)
 
 - Responsive Personal Portfolio Website Design Using HTML CSS & JavaScript
 - Includes a light and dark theme.
@@ -8,4 +8,3 @@
 - Includes a form to send emails.
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
-
