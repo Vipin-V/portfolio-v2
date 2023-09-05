@@ -3,113 +3,691 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--=============== FAVICON ===============-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
-    <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
     />
 
-    <title>Landing Soon</title>
-    <link rel="stylesheet" href="style.css" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Vipin V</title>
   </head>
   <body>
-    <header>
-      <div class="hero">
-        <p>Vipin's Awesome Website</p>
-        <h1>Coming Soon</h1>
-        <hr />
-        <p id="countdown"></p>
-      </div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Vipin V </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__items">
+              <a href="#home" class="nav__link active-link"
+                ><i class="ri-home-4-line"></i>Home
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#skills" class="nav__link">
+                <i class="ri-trophy-line"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#qualification" class="nav__link"
+                ><i class="ri-book-open-line"></i> Qualification
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#services" class="nav__link"
+                ><i class="ri-briefcase-line"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#projects" class="nav__link">
+                <i class="ri-image-line"></i> Projects
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-3-line"></i> Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-    <aside>
-      <h2>Social Links</h2>
-      <div class="icons">
-        <a href="https://discordapp.com/users/525720516560945153" class="">
-          <i class="fab fa-discord"></i>
-        </a>
-        <a href="#" class="twitter hidden">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a
-          href="https://instagram.com/_vipinv_?igshid=MzNlNGNkZWQ4Mg=="
-          class="insta"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Vipin-V" class="git">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://m.youtube.com/@Technopath" class="yt">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="warRoom/index.html" class="sneakpeak-img">
-          <i class="fab">
-            <img src="img/favicon.png" alt="Peak to develping site"
-          /></i>
-        </a>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid section__border">
+          <div class="home__data grid">
+            <h1 class="home__title">
+              Hi, I'm Vipin <br />
+              Frontend Developer <br />
+              Based In India <br />
+            </h1>
+
+            <div class="home__blob grid">
+              <div class="home__perfil">
+                <img src="assets/img/vipin-removebg.png" alt="Vipin's image" />
+              </div>
+
+              <img
+                src="assets/img/shape-wawes.svg"
+                alt="waves image"
+                class="home__shape-wawes"
+              /><img
+                src="assets/img/shape-circle.svg"
+                alt="circle images"
+                class="home__shape-circle"
+              />
+            </div>
+
+            <ul class="home__social">
+              <a
+                href="https://instagram.com/_vipinv_?igshid=MzNlNGNkZWQ4Mg=="
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <!-- <a href="#" target="_blank" class="home__social-link">
+                  <i class="ri-linkedin-box-line"></i>
+                </a> -->
+              <a
+                href="https://github.com/Vipin-V"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://discordapp.com/users/525720516560945153"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-discord-line"></i>
+              </a>
+            </ul>
+          </div>
+
+          <!--==================== HOME INFO 1 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">BIOGRAPHY</h3>
+
+              <p class="home__info-description">
+                Hi, I'm Vipin, Frontend Developer. Passionate about designing
+                beautiful web interfaces. Based in India.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">CONTACT</h3>
+
+              <p class="home__info-description">
+                Kerala, India <br />
+                vipindas233@gmail.com <br />
+                +91 9106705383 <br />
+              </p>
+            </div>
+            <div>
+              <h3 class="home__info-title">SERVICES</h3>
+
+              <p class="home__info-description">
+                Web Developement <br />
+                App Developement <br />
+                UI/UX Design <br />
+              </p>
+            </div>
+          </div>
+
+          <!--==================== HOME INFO 2 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">YEARS OF EXPERIENCE</h3>
+
+              <p class="home__info-number">03+</p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">COMPLETED PROJECTS</h3>
+
+              <p class="home__info-number">9+</p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">COMPANIES WORKED</h3>
+
+              <p class="home__info-number">01+</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My favourite skills</span>
+
+        <div class="skills__container container grid section__border">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i> Web Developer
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/html-1.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/css-3.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/logo-javascript.svg"
+                    alt="skills image"
+                  />
+                </div>
+
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/git-icon.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">Git</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-mac-line"></i> Software Developer
+            </h3>
+
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/flutter-logo.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">Flutter</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/dart.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">Dart</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/python-5.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">Python</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/c.svg" alt="skills image" />
+                </div>
+
+                <h3 class="skills__name">C++</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Experience & Education</span>
+
+        <div class="qualification__container container grid section__border">
+          <!--==================== QUALIFICATION 1 ====================-->
+          <div class="qualification__container">
+            <h3 class="qualification__title">
+              <i class="ri-pencil-ruler-2-line"></i> Education
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">
+                  Btech in Computer Engineering
+                </h3>
+                <span class="qualification__country">Kerala - </span>
+                <span class="qualification__year">2023 - 2026</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">
+                  Diploma in Computer Engineering
+                </h3>
+                <span class="qualification__country"
+                  >Kerala - Younus College of Polytechnic</span
+                >
+                <span class="qualification__year">2021 - 2023</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">12th Grade</h3>
+                <span class="qualification__country">Gujarat - Theta One</span>
+                <span class="qualification__year">2019</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== QUALIFICATION 2 ====================-->
+          <div class="qualification__container">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> Work
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">Freelancer</h3>
+                <span class="qualification__country">India</span>
+                <span class="qualification__year">2023</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">Shristi Innovation</h3>
+                <span class="qualification__country">Kerala</span>
+                <span class="qualification__year">2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="qualification__img"
+          src="assets/img/shape-circle.svg"
+          alt="Qualification image"
+        />
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What i offer</span>
+
+        <div class="services__container container grid section__border">
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+            <h2 class="services__title">Web Developement</h2>
+            <p class="services__description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-code-line"></i>
+            <h2 class="services__title">Software Developement</h2>
+            <p class="services__description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+            <div class="services__border"></div>
+          </div>
+
+          <div class="services__card">
+            <i class="ri-quill-pen-line"></i>
+            <h2 class="services__title">Presentation & Reports</h2>
+            <p class="services__description">
+              Service that provides the best quality and at the request of the
+              client, with professional work and customer support.
+            </p>
+            <div class="services__border"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECTS 1 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="assets/img/project1.jpg"
+                  alt="Project 1 image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h1 class="projects__title">Modern Website</h1>
+                  <a href="#" class="projects__button">
+                    View demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 2 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="assets/img/project2.jpg"
+                  alt="Project 1 image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h1 class="projects__title">ECommerce Store</h1>
+                  <a href="#" class="projects__button">
+                    View demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 3 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="assets/img/project3.jpg"
+                  alt="Project 1 image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle">App</span>
+                  <h1 class="projects__title">Application Design</h1>
+                  <a href="#" class="projects__button">
+                    View demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section">
+        <h2 class="section__title">Testimonial</h2>
+        <span class="section__subtitle">My client saying</span>
+
+        <div class="container section__border">
+          <div class="testimonial__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== TESTIMONIAL 1 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Working with Vipin is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Jettin Sha</h3>
+                  <span class="testimonial__subtitle">Client</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 2 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Working with Vipin is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Veena (Vens)</h3>
+                  <span class="testimonial__subtitle">Client</span>
+                </div>
+              </div>
+
+              <!--==================== TESTIMONIAL 3 ====================-->
+              <div class="testimonial__content swiper-slide">
+                <p class="testimonial__description">
+                  "Working with Vipin is to give a good impression, I carry out
+                  my project at a good cost, with excellent quality and
+                  attention. Great service and recommended."
+                </p>
+
+                <div>
+                  <h3 class="testimonial__name">Rudra Joshi</h3>
+                  <span class="testimonial__subtitle">Client</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+          </div>
+        </div>
+        <img src="assets/img/shape-wawes.svg" alt="" class="testimonial__img" />
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i> Talk to me
+            </h3>
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info">vipindas233@gmail.com</span>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Whatsapp</span>
+                <span class="contact__data-info">+91 9562845383</span>
+                <a
+                  href="https://api.whatsapp.com/send?phone=919562845383&text=Hello"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+              <div class="contact__data">
+                <span class="contact__data-title">Instagram</span>
+                <span class="contact__data-info">_vipinv_</span>
+                <a
+                  href="https://instagram.com/_vipinv_?igshid=MzNlNGNkZWQ4Mg=="
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i> Write me your project
+            </h3>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your name"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Write your email"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Message</label>
+                <textarea
+                  name="user_project"
+                  placeholder="Write your message"
+                  id="contact-project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Vipin V</h1>
+        <p>Web & Software Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://instagram.com/_vipinv_?igshid=MzNlNGNkZWQ4Mg=="
+            target="_blank"
+            class="footer__social-link"
+            ><i class="ri-instagram-line"></i>
+          </a>
+          <a
+            href="https://github.com/Vipin-V"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+          <a
+            href="https://discordapp.com/users/525720516560945153"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-discord-line"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Copyright Vipin V. All rights reserved 2023
+        </span>
       </div>
-    </aside>
-    <section>
-      <div class="contact-box">
-        <h2>Contact Me</h2>
-        <form
-          action="https://formsubmit.co/e1557e5d1ab0122f04bbe909f948506b"
-          method="POST"
-        >
-          <label for="fullname">Full Name:</label>
-          <input type="text" id="fullname" name="fullname" required />
+    </footer>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" required />
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
-
-  <!-- !  Scripts -->
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Oct 7, 2023 00:00:00").getTime();
-
-    // Update the countdown every 1 second
-    var countdown = setInterval(function () {
-      // Get the current date and time
-      var now = new Date().getTime();
-
-      // Calculate the remaining time
-      var distance = countDownDate - now;
-
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the countdown
-      document.getElementById("countdown").innerHTML =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-      // If the countdown is over, display a message
-      if (distance < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script>
 </html>
