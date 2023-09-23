@@ -216,7 +216,7 @@ body.dark-theme {
   justify-content: space-between;
   align-items: center;
   background-color: var(--body-color);
-  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+  box-shadow: 0 4px 20px hsla(210, 1%, 33%, 0.6);;
   padding-inline: 1.5rem;
   border-radius: 3rem;
   transition: background 0.4s; /* for dark mode animation */
